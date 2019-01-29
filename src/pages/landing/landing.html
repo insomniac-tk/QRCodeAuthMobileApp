@@ -1,0 +1,19 @@
+<ion-content padding >
+  <img src="assets/imgs/logo.png" class="displayed" height="150px" width="150px" alt="tk_logo" />
+   <ion-list>
+    <form [formGroup]="form" (ngSubmit)="PhpValidate()" >
+      <ion-item>
+         <ion-label floating>Username</ion-label>
+         <ion-input type="text" formControlName="name" [(ngModel)]="Username"></ion-input>
+      </ion-item>
+      <ion-item>
+            <ion-label floating>Password</ion-label>
+            <ion-input type="password" formControlName="password" [(ngModel)]="Password"></ion-input>
+      </ion-item>
+          <br>
+          <div padding text-center>
+           <button ion-button  color="secondary" style="text-transform:none;"  [disabled]="!form.valid" >Login</button>
+          </div>              
+      </form>
+    </ion-list>
+</ion-content>      

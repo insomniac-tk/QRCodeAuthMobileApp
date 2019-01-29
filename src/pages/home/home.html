@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar hideBackButton  class="nav" color="dark">
+    <ion-title text-center>
+        {{PageTitle}} 
+         
+    <img float-right  (click)="logout()" style="margin-right:0px" src="assets/imgs/logout.png" class="displayed" height="25px" width="25px" alt="tk_logo" /> 
+        
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  
+
+<div *ngIf="results">
+    <div  *ngIf="flag" text-center >
+        <ion-item text-center text-wrap> 
+             <ion-card>
+               <ion-card-content>
+                       <h1> <b>{{items.TX_ID}}</b> </h1>
+             </ion-card-content>
+             </ion-card>
+       
+         <ion-card>
+            
+             <ion-card-content>
+          <h1> <b>{{items.Enrollment_no}}</b>  </h1>
+             </ion-card-content>
+         </ion-card>
+         <ion-card>
+             <ion-card-content>
+          <h1> <b>{{items.Name}}</b> </h1>
+             </ion-card-content>
+         </ion-card>
+   
+         <ion-card >
+           <ion-card-content>
+        <h1> <b>{{items.College}}</b> </h1>
+           </ion-card-content>
+       </ion-card>
+       
+          </ion-item>
+   </div>
+</div>
+
+<div  text-center >
+    <button  ion-button block  color="secondary" (click)="scanBarcode()">Scan</button>
+</div>
+
+<!-- 
+    $Details = array("TX_ID" => $tx_id , "Enrollment_no"=>$P_enr,"Name" => $P_name , "College" => $P_clg);
+-->
