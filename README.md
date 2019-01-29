@@ -1,3 +1,6 @@
+
+=========================== QR CODE SCANNER HOOKED TO A FUNCTIONAL MYSQL DB ================================================== 
+
 This is the code dump for a mobile application that I'd worked on during December 2017-February 2018. 
 During our college's  annual technical symposium 'TechXtreme', one of the problems that had persisted was of authenticating 
 the entry of participants. The solution to this problem as we, the development team had figured out was to assign QR Codes
