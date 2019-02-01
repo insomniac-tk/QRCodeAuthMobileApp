@@ -70,7 +70,7 @@ try
              }
        }
     
-    // let's see if the fockin flags were set or not
+    // let's see if the flags were set or not
     fwrite($myfile,"IsPresent :".$clg_flag."\n"."Event flag: ".$event_flag);
     mysqli_free_result($Result);
       /* 
